@@ -131,6 +131,8 @@
 
         ul {
             list-style: none;
+            margin:0;
+            margin-top:-14px !important;
         }
 
         ul li:before {
@@ -140,11 +142,13 @@
         @media print {
             body {
                 font-size: .8em;
-                padding:0;
+                padding: 0;
             }
-            .header{
-                display: none;
+
+            .header {
+                /* display: none; */
             }
+
             .page-break {
                 /* page-break-after: always; */
             }
@@ -154,7 +158,7 @@
                 /* padding-top: 10mm; */
             }
 
-            
+
         }
     </style>
 </head>
@@ -215,16 +219,18 @@
         </div>
     </div>
     <div class="container-fluid cover-letter">
+        
         <div class="section">
-            <p>5/20/2022</p>
-        </div>
-        <div class="section">
+            <div>5/20/2022</div>
+            <br>
             <div>
                 Hiring Manager
             </div>
             <address>
                 Waverly F. Akins Wake County Office Building
-                <br> Raleigh, NC 27602
+                <br>
+                337 S Salisbury St, 
+                <br> Raleigh, NC 27601
             </address>
         </div>
         <div class="section">
@@ -232,25 +238,24 @@
         </div>
         <div class="section">
             With over twenty years of web development and system architecture experience,
-            I am confident of being a great fit for the current open position of Application Development Engineer at Wake County's 
-            Information Services. Working as a team member or single detached resource, my past experience has crossed 
-            complex mature systems as well as groundbreaking green field environments.
+            I am confident that I am a great fit for the current open position of Application Development Engineer at
+            Wake County
+            Information Services.
+
+            I have worked as both a team member and a single detached resource, and my past experience has crossed
+            complex mature systems and groundbreaking green field environments.
 
         </div>
         <div class="section">
             <p>
-                My current responsibilities with the University of North Carolina initially 
-                required me to reengineer a system troubled by poor design, performance, and documentation. 
-                In the end I proposed, gathered requirements, and created design documentation for a new implementation 
-                which services the 50k user base of the university. As the lone resource of this endeavor 
-                I've created a system offering the following: loosely coupled, exceptional logging, 
-                continuous integration and automatic deployment of code. Always mindful of SOLID principles, 
-                I strive to ensure my code is maintainable, testable, and performant.
-            </p>
-
-            <p>
-                Principals Included:
-            </p>
+                One of my key projects at the University of North Carolina required me to reengineer a system troubled
+                by poor design, performance and documentation.
+                In the end I proposed, gathered requirements and created design documentation for a new implementation
+                which services the 50k user-base of the University. As the sole resource of this endeavor,
+                I've created a system offering the following: loosely coupled, exceptional logging,
+                continuous integration and automatic deployment of code. Always mindful of SOLID principles,
+                I strive to ensure my code is maintainable, testable and performant. Principals of this project
+                include:
             <ul>
                 <li>
                     Inversion of Control (IOC)
@@ -262,41 +267,59 @@
                     Pragmatic implementation of Command and Query Responsibility Segregation (CQRS).
                 </li>
             </ul>
+            </p>
+
+
 
             <p>
-                The end result of my work on the aforementioned project resulted in over fifteen secure
-                individual RESTful API microservices including, to just name a few, Active Directory, 
-                LDAP, Exchange, Microsoft365 and data access layer.
-            </p>
-            <p>
-                The data access layer was implemented using Entity Framework Core with the following implementation details.
-            </p>
+                The end result of my work on this project was over fifteen secure
+                individual RESTful API microservices including, to name a few:
             <ul>
                 <li>
-                    Microsoft SQL 2016
-                </li>
+                    Active Directory</li>
                 <li>
-                    Code First</li>
+                    LDAP</li>
                 <li>
-                    Fluent API 
-                </li>
+                    Microsoft 365</li>
+                <li>
+                    Data Access Layer</li>
             </ul>
-            <div class="page-break"></div>
-            
-            <p class="cont">
-                As much care and consideration was also applied to the front-end facing application. 
-                Working closely with the university's usability and accessibility department, 
-                I designed and developed a responsive web interface using VueJs. 
-                The application, secured using JWT authentication, pulled in roles from AD to identify 
-                and apply custom experiences based on individual user roles.
-            </p>
 
+            </p>
             <p>
-                It would be a pleasure to learn more about Wake County's needs and would welcome the
-                chance to provide further insight into passion for software development.
+                The data access layer was implemented using Entity Framework Core with the following implementation
+                details:
+                <ul>
+                    <li>
+                        Microsoft SQL 2016
+                    </li>
+                    <li>
+                        Code First</li>
+                    <li>
+                        Fluent API
+                    </li>
+                </ul>
             </p>
+            
+            <div class="page-break"></div>
 
-            <p>Thank you for considering my candidacy for this position.</p>
+            <p class="cont">
+                As much care and consideration was also applied to the front-end facing application.
+                Working closely with the University's usability and accessibility department,
+                I designed and developed a responsive web interface using VueJs.
+                The application, secured using JWT authentication, pulled in roles from AD to identify
+                and apply custom experiences based on individual user roles.
+                <br>
+                Thank you for considering my candidacy for this position.
+                <br>
+                <br>
+                It would be a pleasure to talk with you regarding your needs and I welcome 
+                the chance to provide further insight about my passion for software development.
+
+            </p>
+           
+
+            
 
 
             <p>Sincerely,
